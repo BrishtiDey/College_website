@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Birla Institute of Technology</title>
+        <style>
+            body 
+            .link a:link, .link a:visited {
+                color: black;
+                padding: 10px;
+                text-decoration: none;
+                display: inline-block;
+                font: small-caps bold 20px/40px Georgia, serif;
+                margin-left: 15px;
+            }
+            .link a:hover {
+                color: whitesmoke;
+            }
+            .desc {
+                text-align: center;
+                padding: 25px;
+                margin: auto;
+                width: 1250px;
+                height: 600px;
+                background-color: rgba(0, 0, 0, .4);
+                color: white;
+            }
+            .pop {
+                text-align: center;
+                font: small-caps bold 25px/40px Georgia, serif;
+            }
+            table {
+                width: 70%;
+                height: 90%;
+            }
+            table tr td {
+                color: white;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "link">
+            <a href = "home.html">Home</a>
+            <a href = "academics.html">Academics</a>
+            <a href = "admission.html">Admission</a>
+            <a href = "gallery.html">Gallery</a>
+        </div>
+        <div class = "desc">
+            <h1 class = "pop">Enroll Now</h1>
+            <form>
+                <table>
+                    <tr>
+                        <td>First Name: <input type = "text" name = "first_name"/></td>
+                        <td>Last Name: <input type = "text" name = "last_name"/></td>
+                        <td rowspan =2>
+                            Sex:<br>
+                            <input type = "radio" name = "sex" value = "male">M<br>
+                            <input type = "radio" name = "sex" value = "female">F<br>
+                            <input type = "radio" name = "sex" value = "other">Others
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>D.O.B: <input type = "date" name = "dob"/></td>
+                        <td>Age:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "text" name = "age"/></td>
+                    </tr>
+                    <tr>
+                        <td>Email Address: <input type = "email" id = "emails" name = "email"> <input type = "submit" value = "verify Email"/></td>
+                        <td>Mobile No.: <input type = "number" name = "mob"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan = 2>ID Proof</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ID: <select name ="dropdown">
+                            <option value="Aadhar_Card" selected>Aadhar Card</option>
+                            <option value="Pan_Card" selected>Pan Card</option>
+                            <option value="Driving_License" selected>Driving License</option>
+                            <option value="Passport" selected>Passport</option>
+                            <option value="Select_One" selected>--Select One--</option>
+                        </td>
+                        <td>ID Card No.: <input type= "number" name="id"/></td>
+                    </tr>
+                    <tr>
+                        <td>ID Card Image: <input type="file" id="img1" name="img" accept="image/*"></td>
+                        <td>Student Image: <input type="file" id="img2" name="img" accept="image/*"></td>
+                    </tr>
+                    <tr>
+                        <td>10<sup>th</sup> Result Image: <input type="file" id="img3" name="img" accept="image/*"></td>
+                        <td>12<sup>th</sup> Result Image: <input type="file" id="img4" name="img" accept="image/*"></td>
+                    </tr>
+                    <tr>
+                            <td><input type="submit" name="submit" value="Submit"/></td>
+                            <td><input type="reset" name="reset" value="Reset"/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <a href = "home.html">Back to Home</a>
+    </body>
+</html>
